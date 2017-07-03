@@ -9,6 +9,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <center>
+      <% if user_signed_in? %>
+        <%= link_to 'Settings', edit_user_registration_path %>
+        <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
+      <% else %>
+        <%= link_to 'Get Started', new_user_registration_path  %>
+        <%= link_to 'Sign In', new_user_session_path %>
+      <% end %>
+      <%= yield %>
+    </center>
   </body>
 </html>
