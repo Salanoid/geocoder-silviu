@@ -1,10 +1,11 @@
 <h1>Notengodinero</h1>
 <br>
 <% if user_signed_in? %>
-    <%= current_user.email %>
+    <%= current_user.email %> <br>
     <%= @user_location_country %> <br>
     <%= @user_location_city %> <br>
     <%= @user_location_longitude %> <br>
     <%= @user_location_latitude %> <br>
     <%= @user_ip %>
+    <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&key=AIzaSyA6nZL7hRFHgoBpO0rayEWSsSNeU2l8-QY"
 <% end %>
