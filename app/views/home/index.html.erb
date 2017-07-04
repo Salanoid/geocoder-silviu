@@ -2,5 +2,9 @@
 <br>
 <% if user_signed_in? %>
     <%= current_user.email %>
-    <%= @user_location %>
+    <%= @user_location_country %>
+    <%= @user_location_city %>
+    <%= @user_location_longitude %>
+    <%= @user_location_latitude %>
+    <%= @user_ip %>
 <% end %>
