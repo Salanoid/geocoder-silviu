@@ -7,5 +7,5 @@
     <%= @user_location_longitude %> <br>
     <%= @user_location_latitude %> <br>
     <%= @user_ip %> <br>
-    <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@user_location_latitude},#{@user_location_longitude}&zoom=12&size=400x400&markers=size:mid%7Ccolor:red%7C#{@user_location_latitude}%2C#{@user_location_longitude}&key=AIzaSyA6nZL7hRFHgoBpO0rayEWSsSNeU2l8-QY" %>
+    <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@user_location_latitude},#{@user_location_longitude}&zoom=16&size=400x400&markers=size:mid%7Ccolor:red%7C#{@user_location_latitude}%2C#{@user_location_longitude}&key=AIzaSyA6nZL7hRFHgoBpO0rayEWSsSNeU2l8-QY" %>
 <% end %>
